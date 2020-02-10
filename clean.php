@@ -2,15 +2,28 @@
 
 class CleanClass 
 {
+    public $data;
+
     public function __construct($data)
     {
         # code...
-        $clean = trim($data);
-        $clean = stripslashes($clean);
-        $clean =  htmlspecialchars($clean);
-        $clean =  filter_var($clean, FILTER_SANITIZE_STRING);
-        echo $data . "<br>";
-        return $data;
+        $this->data = $data;
+        $clean = trim($this->data);
+        $clean1 = empty($clean);
+        $clean2 = stripslashes($clean1);
+        $clean3 =  htmlspecialchars($clean2);
+        $clean4 =  filter_var($clean3, FILTER_SANITIZE_STRING);
+        echo $clean4 . "<br>";
+        
+    }
+
+    function GetData()
+    {
+        /* if (empty($this->data)) {
+            # code...
+            error_msg(303, "empty filed");
+        } */
+        return $this->data;
     }
 }
 
