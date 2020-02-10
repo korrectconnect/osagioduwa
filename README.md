@@ -49,22 +49,22 @@ Rules:
         Allways use a POST METHOD
       ]
 
-# Api---- |->admin
-#         |
-#         |->api--|
-#                 |->user--|-index.php
-#                 |        |
-#                 |        |-regist.php
-#                 |
-#                 |
-#                 |->vendor--|->login--|-index.php
-#                            |
-#                            |->meun--|->add--|-index.php
-#                            |        |       
-#                            |        |->remove--|-index.php
-#                            |        |
-#                            |        |update--|-index.php
-#                            |
-#                            |
-#                            |->regist--|-index.php
+ Api---- |->admin
+         |
+         |->api--|
+                 |->user--|-index.php
+                 |        |
+                 |        |-regist.php
+                 |
+                 |
+                 |->vendor--|->login--|-index.php
+                            |
+                            |->meun--|->add--|-index.php
+                            |        |       
+                            |        |->remove--|-index.php
+                            |        |
+                            |        |update--|-index.php
+                            |
+                            |
+                            |->regist--|-index.php
 #       
